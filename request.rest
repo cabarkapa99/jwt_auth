@@ -1,0 +1,25 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name":"Pera",
+    "password":"sifra"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name":"Pera",
+    "password":"sifra"
+}
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGVyYSIsImlhdCI6MTY4NzU1ODc5OH0.0IfKpSjUB5HUUGAuw3bVUhykfBz419t_xFNSbQDQiHc
+
