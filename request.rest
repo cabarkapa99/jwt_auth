@@ -9,7 +9,14 @@ Content-Type: application/json
     "name":"Pera",
     "password":"sifra"
 }
+###
 
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGVyYSIsImlhdCI6MTY4ODkyNzg5OH0.0RKxUTmZrgtBvL9cGSUlWgRBqYpXILqNRBULMMqwOas"
+}
 ###
 
 POST http://localhost:3000/login
@@ -21,5 +28,4 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGVyYSIsImlhdCI6MTY4NzU1ODc5OH0.0IfKpSjUB5HUUGAuw3bVUhykfBz419t_xFNSbQDQiHc
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGVyYSIsImlhdCI6MTY4ODkyNzk2NCwiZXhwIjoxNjg4OTI4MDI0fQ.sBLaENixvzrbAFVTpLvuIpThA5H2ZE6yDR4VT_TBxn0
